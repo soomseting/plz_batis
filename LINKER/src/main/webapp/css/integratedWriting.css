@@ -1,0 +1,97 @@
+* {
+    font-family: 'JejuGothic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000; 
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#register-button {
+    float: right;
+    color: #fff;
+    background-color: #E2DCA7;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-box .checkbox-group {
+    margin-bottom: 10px;
+}
+
+#title-input {
+    width: 50%;
+    background-color: #F2F1ED;
+    border: 1px solid #C1C1C1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content-area textarea {
+    width: 96.5%;
+    height: 300px;
+    border: 1px solid #C1C1C1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.file-container {
+    border: 1px solid #C1C1C1; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.file-upload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.file-btn {
+    background-color: #F2F1ED;
+    padding: 7px 10px;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+    border-top: 1px solid #C1C1C1; /* 파일 업로드와 파일 정보 사이에 구분선 추가 */
+}

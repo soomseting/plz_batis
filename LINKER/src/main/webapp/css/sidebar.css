@@ -1,0 +1,14 @@
+* { box-sizing: border-box; /* 전체 요소의 크기 계산 방식 변경 */ margin: 0; padding: 0; font-family: 'JejuGothic', sans-serif;}
+
+.side_inner_body { position: fixed; left: 270px; top: 225px; max-width: 100%;  /* 부모 요소보다 커지지 않게 */ width: 200px;  /* 원하는 크기로 제한 */ height: auto;  /* 내용에 맞게 조정 */}
+
+.side_bar { height:auto; width: 180px; background-color: #E2DCA7; border-radius:  10px;  padding-bottom: 0;}
+.side_bar ul li strong { margin-top: 10px; /* strong 태그 위에 10px 마진 추가 */ display: block; /* strong을 블록 요소로 처리하여 마진을 적용할 수 있게 함 */}
+.side_bar ul { list-style: none; padding: 0; margin: 0;}
+.side_bar ul li { padding: 10px 0; text-align: center;}
+.side_bar ul li a { text-decoration: none; color: #fff; display: block; font-size: 16px; padding: 10px 0; transition: background-color 0.3s ease; /* 부드러운 색상 변경 효과 */ text-align: center;}
+
+/* 호버 시 배경색 변경 */
+.side_bar ul li a:hover { background-color: #D7D090; color: white; border-radius: 5px; }
+.side_bar ul li.active { background-color: rgba(0, 0, 0, 0.1);}
+

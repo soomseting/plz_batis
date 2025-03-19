@@ -1,0 +1,32 @@
+/* *{ font-family: 'JejuGothic', sans-serif;} */
+
+.cart-container { max-width: 900px; margin: 30px auto; padding: 90px;}
+
+.cart-title { text-align: center;}
+.cart-title h2 {font-size: 24px;}
+
+.progress-bar { font-size: 14px; margin: 20px;}
+.progress-bar .active { font-size: 20px; color: black;}
+.progress-bar span { color: #BAB8B8;}
+
+.cart-empty { width: 210px; height: 210px; margin: 0 auto ;}
+.cart-empty p { font-size: 17px; color: #888;}
+
+.hidden { display: none;}
+
+.cart-list { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: center;}
+.cart-item th, td { padding: 10px; border-bottom: 1px solid #ddd;}
+.cart-item th { background: #f7f7f7;}
+
+.delete-btn { border-radius: 5px; color: white; border: none; padding: 5px 10px; cursor: pointer;}
+
+.cart-footer { display: flex; justify-content: space-between; align-items: center; padding: 10px 0;}
+
+.total-price { font-size: 18px; font-weight: bold;}
+
+.order-btn { padding: 10px 20px; background-color: #ddd; border: none; cursor: not-allowed;}
+
+/* cart btn */
+.add-item-btn { margin-top: 30px; margin-left: 60px; padding: 10px 15px; background-color: #8D9192; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;}
+
+.sec_area{height:670px;}

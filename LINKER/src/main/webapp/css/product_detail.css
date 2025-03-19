@@ -1,0 +1,42 @@
+/* section */
+
+/* product_detail_wrap */
+.product_detail_wrap{width: 1300px;height: 700px; display: flex; justify-content: space-around; align-items: center;margin: 0 auto;}
+
+.product_detail_img{width: 550px;height: 620px;}
+
+.detail_main img{width: 550px;height: 550px;}
+.detail_sub{margin-top: 15px; width: 170px;height: 50px; display: flex; justify-content: space-around; align-items: center;}
+.detail_sub div img{width: 50px;height: 50px;}
+/* .pr_ping img{width: 45px;height: 45px;border: 5px solid black;} */
+.detail_sub div img:hover{width: 50px;height: 50px;border: 5px solid black;}
+
+.product_detail_con{width: 500px;height: 650px;margin-top: 40px;}
+.de_con_header{width: 500px;height: 160px; border-bottom: 1px solid black;}
+.de_con_header strong{font-size: 20px;}
+.pr_company{color: #777777; font-size: 11px; padding: 15px 0;}
+.pr_title{font-size: 20px; padding-bottom: 20px;}
+
+
+.pr_sub_mini{display: flex; justify-content: space-between; width: 280px;margin-top: 50px; font-size: 14px; color: #777;}
+.pr_detail_left{width: 80px; font-size: 10px;}
+.pr_detail_right{width: 200px; font-size: 10px;}
+.pdr{text-decoration: underline;}
+
+.pr_sel{margin-top: 10px;}
+
+/* 제품종류 */
+.pr_detail_right select{width: 150px;height: 20px;}
+
+.product_detail_btn{display: flex;justify-content: space-between; align-items: center; width: 500px;margin-top: 45px;}
+.product_detail_btn button{width: 220px ; height: 60px; border: 1px solid black; border-radius: 40px;font-size: 20px;;}
+.pr_btn_left{background: #fff;color: #000;font-weight: 900;}
+.pr_btn_right{background: #000; color: #fff;font-weight: 900;}
+
+.detail_bar{width: 1200px;border-top: 1px solid black; margin: 0 auto; text-align: center;}
+.detail_bar p{margin-top: 20px;}
+.detail_bar img{width: 30px;height: 30px;margin-top: -10px;}
+
+.detail_content{width: 801px;margin: 0 auto;margin-top: 15px;}
+
+/*별점 리뷰*/
