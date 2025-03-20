@@ -1,10 +1,10 @@
 /* 기본 스타일 */
 * {font-family:  'Arial', 'Helvetica', sans-serif;}
 
-.container {max-width: 900px;margin: 30px auto;padding: 20px;box-sizing: border-box;}
+.container {max-width: 800px;margin: 30px auto;padding: 20px;box-sizing: border-box;}
 
 /* 제목 및 안내문 스타일 */
-.content strong {font-size: 24px;font-weight: bold;display: block;margin-bottom: 10px;;}
+.content strong {font-size: 20px;font-weight: bold;display: block;margin-bottom: 10px;}
 .content .color {color: #E2DCA7; /* 연한 노란색 계열 */}
 .content .coment {padding-bottom: 10px;border-bottom: 1px solid #000;}
 
@@ -19,7 +19,7 @@
 .order-status {width: 100px;padding: 5px;border-color: #fff;cursor: pointer;}
 
 /* 페이지네이션 스타일 */
-.paginationa {  /* 페이지네이션을 화면에 고정 */ bottom: 20px; /* 화면 하단에 고정 */ left: 50%; /* 화면 가로 중앙 */ transform: translateX(-50%); /* 중앙 정렬 */ display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 16px; margin-top: 300px; /* 추가 공간 */}
+/* .paginationa {  페이지네이션을 화면에 고정 bottom: 20px; 화면 하단에 고정 left: 50%; 화면 가로 중앙 transform: translateX(-50%); 중앙 정렬 display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 16px; margin-top: 300px; 추가 공간} */
 .pagination{width: 200px; height: 30px; text-align: center;display: flex; justify-content: space-around; align-items: center;margin: 0 auto;margin-top: 260px;}
 
 .pagination a span{ cursor: pointer; padding: 5px 10px; color: #E2DCA7;font-size: 15px;}

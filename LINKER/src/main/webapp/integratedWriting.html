@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>통합글쓰기</title>
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/integratedWriting.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/integratedWriting.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/jquery-3.7.1.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div id="pop">
@@ -84,12 +84,21 @@
                 </div>  
                 <div class="form-box">
                     <div class="checkbox-group">
-                        <input type="checkbox" id="product-register" checked>
+                        <input type="checkbox" id="product-register">
                         <label for="product-register">상품등록</label>
                         <input type="checkbox" id="inquiry">
                         <label for="inquiry">1:1문의</label>
                     </div>
                     <input type="text" placeholder="제목을 입력하세요" id="title-input">
+
+                    <div id="category-box">
+                        <select id="category-select">
+                            <option value="">카테고리 선택</option>
+                            <option value="acrylic">아크릴 굿즈</option>
+                            <option value="wood">우드 굿즈</option>
+                            <option value="illustration">일러스트 굿즈</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="content-area" >
                     <textarea placeholder="내용을 입력하세요" id="content-input"></textarea>

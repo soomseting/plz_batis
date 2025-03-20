@@ -1,24 +1,30 @@
 /* 기본 스타일 */
-* {font-family:  'Arial', 'Helvetica', sans-serif;margin: 0;padding: 0;box-sizing: border-box;}
+* {font-family:  'Arial', 'Helvetica', sans-serif;}
 
-.container {max-width: 900px;margin: 30px auto;padding: 20px;}
+.container {width: 800px;margin: 30px auto;padding: 20px;box-sizing: border-box;margin: 0 auto;}
+
+.content-sd{ height: 100px;}
 .content strong {font-size: 24px;font-weight: bold;display: block;}
-.content .content-status-ok p {color: #fff;background-color: #E2DCA7;width: 100px;height: 40px;font-size: 13px;text-align: center;border-radius: 5px;display: inline-block;margin: 10px 0;}
+.content-status-ok{height: 70px;}
+.content .content-status-ok p {color: #fff;background-color: #E2DCA7;width: 100px; height: 20px; font-size: 13px;text-align: center;border-radius: 5px;display: inline-block;margin: 10px 0;}
 
 .content-title  {border-top: 1px solid #777; /* 연한 회색 선 추가 */display: flex;align-items: center;justify-content: space-between; /* 제목 왼쪽, 버튼 오른쪽 */width: 100%;}
 .button-container {float: right; margin-left: auto;}
 .edit-btn, .delete-btn {padding: 5px 10px;border: 1px solid #777;background-color: white;cursor: pointer;border-radius: 5px;font-size: 14px;}
 
-.edit-btn:hover, .delete-btn:hover {background-color: #f0f0f0;}
+.edit-btn:hover, .delete-btn:hover {background-color: #f0f0f0;} 
 .content-area {background-color: #F6F3F3;}
 
 /* 일반 문단(p)에는 밑줄 제거 */
 .content p {font-size: 15px;padding: 15px;border-bottom: none; /* ✅ 줄 제거 */}
 .content-area p {border: none;}
-.content-area {padding: 15px;margin-top: 10px;border-radius: 5px;font-size: 15px;}
+.content-area {padding: 15px;margin-top: 15px;border-radius: 5px;font-size: 15px;}
 
+/*waited answer*/
+.cso{padding: 8px;}
 
 .button-box a {display: flex; /* 가로 정렬 */justify-content:right; /* 가운데 정렬 */align-items: center; /* 세로 정렬 */margin-top: 20px; /* 버튼과 콘텐츠 간 간격 */width: 100%; /* 전체 너비 설정 */text-decoration:none;color: #777;}
 
 
 
+/*sec_area*/

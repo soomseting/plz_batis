@@ -6,7 +6,6 @@
     <title>마이페이지-주문내역</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/order.css">
-    <link rel="stylesheet" href="css/writeBtn.css">
     <link rel="stylesheet" href="css/sidebar.css">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -79,6 +78,18 @@
     <div id="header_bottom_line"></div>
 </div>
 <section class="sec_area">
+    <!-- side-bar는 section태그 바로 밑에 위치시켜야함 -->
+    <div class="side_inner_body">
+        <div class="side_bar">
+            <ul>
+                <li><strong>마이페이지</strong></li>
+                <li><a href="#">상품관리</a></li>
+                <li><a href="#">주문 내역</a></li>
+                <li><a href="#">회원 정보 수정</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="content">
             <strong>주문조회</strong>
@@ -120,9 +131,6 @@
                 <a href="#"><span class="double-prev" onclick="goToFirstPage()"><img src="img/right_db_arrow.png" alt="#"></span></a>
             </div>
         </div>
-        <div class="writeic">
-            <button class="write"><img src="img/writing_icon.png" alt="아이콘">글쓰기</button>
-        </div>
     </div>
   </section>
     <footer class="footer">
@@ -153,17 +161,6 @@
     
       </div>
     </footer>
-    <div class="side_inner_body">
-        <div class="side_bar">
-            <ul>
-                <li><strong>마이페이지</strong></li>
-                <li><a href="#">상품관리</a></li>
-                <li><a href="#">주문 내역</a></li>
-                <li><a href="#">회원 정보 수정</a></li>
-                <li><a href="#">로그아웃</a></li>
-            </ul>
-        </div>
-    </div>
     <script>
        
   </script>

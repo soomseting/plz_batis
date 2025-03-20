@@ -14,6 +14,33 @@ document.addEventListener('DOMContentLoaded', function () {
             productRegister.checked = false;
         }
     });
+
+    var productCheckbox = document.getElementById("product-register");
+    var inquiryCheckbox = document.getElementById("inquiry");
+    var categoryBox = document.getElementById("category-box");
+    var titleInput = document.getElementById("title-input");
+    var contentInput = document.getElementById("content-input");
+    var registerButton = document.getElementById("register-button");
+
+    // 상품등록 체크박스 상태에 따라 카테고리 박스 보이기/숨기기
+    productCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+            categoryBox.style.display = "block"; // 상품등록 선택 시 카테고리 보이기
+        } else {
+            categoryBox.style.display = "none"; // 상품등록 해제 시 카테고리 숨기기
+        }
+    });
+
+    // 1:1 문의 체크박스 클릭 시 카테고리 숨기기
+    inquiryCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+            categoryBox.style.display = "none"; // 1:1문의 선택 시 카테고리 숨기기
+        } else {
+            if (productCheckbox.checked) {
+                categoryBox.style.display = "block"; // 상품등록 체크되어 있으면 카테고리 보이기
+            }
+        }
+    });
     
     var fileInput = document.getElementById('file-input');
     fileInput.addEventListener ('change',function (event) {

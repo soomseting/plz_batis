@@ -101,13 +101,11 @@
                 </tr>
             </table>
             <div class="pagination">
-                <span class="double-prev">
-                    <<< /span>
-                        <span class="prev">
-                            << /span>
-                                <span class="page-num">1</span>
-                                <span class="next">></span>
-                                <span class="double-next">>></span>
+                <a href="#"><span class="double-next" onclick="goToLastPage()"><img src="img/left_db_arrow.png" alt="#"></span></a>
+                <a href="#"><span class="next" onclick="goToNextPage()"><img src="img/left_arrow.png" alt="arrow"></span></a>
+                <a href="#"><span class="page-num" id="currentPage">1</span></a>
+                <a href="#"><span class="prev" onclick="goToPreviousPage()"><img src="img/right_arrow.png" alt="arrow"></span></a>
+                <a href="#"><span class="double-prev" onclick="goToFirstPage()"><img src="img/right_db_arrow.png" alt="#"></span></a>
             </div>
         </div>
     </div>

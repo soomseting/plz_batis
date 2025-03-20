@@ -95,3 +95,9 @@
     padding: 10px;
     border-top: 1px solid #C1C1C1; /* 파일 업로드와 파일 정보 사이에 구분선 추가 */
 }
+
+#category-box {
+    margin-top: 10px;
+    display: none; /* 기본적으로 숨김 */
+    border: none;
+}

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상품관리</title>
-    <link rel="stylesheet" href="../css/productmanagement.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/writeBtn.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productManagement.css">
+    <link rel="stylesheet" href="css/writeBtn.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/jquery-3.7.1.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/productManagement.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/productManagement.js"></script>
 </head>
 
 <body>
@@ -79,55 +80,64 @@
         <div id="header_bottom_line"></div>
     </div>
     <section class="sec_area">
-    <div class="container">
-        <div class="content">
-            <strong id="title">상품관리</strong>
-            <div class="coment">
-                <span>상품등록 내역을 확인할 수 있습니다.</span>
-                <span class="color">상품명을 선택하시면 자세히 확인할 수 있습니다.</span>
-            </div>
-            <button type="button" class="delete-btn" onclick="deleteSelectedProducts()">삭제</button>
-            <form id="productForm">
-                <table class="board-table">
-                    <tr>
-                        <th><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"> 전체 선택</th>
-                        <th>상품명</th>
-                        <th>카테고리</th>
-                        <th>가격</th>
-                        <th>등록일</th>
-                        <th>상태</th>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" class="product-checkbox" value="1"></td>
-                        <td><a href="product_detail.html" class="product-link">오둥이키링</a></td>
-                        <td>키링</td>
-                        <td>2,500원</td>
-                        <td>2025-03-17</td>
-                        <td>
-                            <select class="product-status">
-                                <option value="판매중">판매중</option>
-                                <option value="판매중단" selected>판매중단</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <div class="pagination">
-                <span class="double-prev" onclick="goToFirstPage()">
-                    <<< /span>
-                        <span class="prev" onclick="goToPreviousPage()">
-                            << /span>
-                                <span class="page-num" id="currentPage">1</span>
-                                <span class="next" onclick="goToNextPage()">></span>
-                                <span class="double-next" onclick="goToLastPage()">>></span>
+        <div class="side_inner_body">
+            <div class="side_bar">
+                <ul>
+                    <li><strong>마이페이지</strong></li>
+                    <li><a href="#">상품관리</a></li>
+                    <li><a href="#">주문 내역</a></li>
+                    <li><a href="#">회원 정보 수정</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-
-    <div class="writeic">
-        <button class="write"><img src="img/writing_icon.png" alt="아이콘">글쓰기</button>
-    </div>
-</section>
+        <div class="container">
+            <div class="content">
+                <strong id="title">상품관리</strong>
+                <div class="coment">
+                    <span>상품등록 내역을 확인할 수 있습니다.</span>
+                    <span class="color">상품명을 선택하시면 자세히 확인할 수 있습니다.</span>
+                </div>
+                <button type="button" class="delete-btn" onclick="deleteSelectedProducts()">삭제</button>
+                <form id="productForm">
+                    <table class="board-table">
+                        <tr>
+                            <th><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"> 전체 선택</th>
+                            <th>상품명</th>
+                            <th>카테고리</th>
+                            <th>가격</th>
+                            <th>등록일</th>
+                            <th>상태</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="product-checkbox" value="1"></td>
+                            <td><a href="product_detail.html" class="product-link">오둥이키링</a></td>
+                            <td>키링</td>
+                            <td>2,500원</td>
+                            <td>2025-03-17</td>
+                            <td>
+                                <select class="product-status">
+                                    <option value="판매중">판매중</option>
+                                    <option value="판매중단" selected>판매중단</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="pagination">
+                    <a href="#"><span class="double-next" onclick="goToLastPage()"><img src="img/left_db_arrow.png"
+                                alt="#"></span></a>
+                    <a href="#"><span class="next" onclick="goToNextPage()"><img src="img/left_arrow.png"
+                                alt="arrow"></span></a>
+                    <a href="#"><span class="page-num" id="currentPage">1</span></a>
+                    <a href="#"><span class="prev" onclick="goToPreviousPage()"><img src="img/right_arrow.png"
+                                alt="arrow"></span></a>
+                    <a href="#"><span class="double-prev" onclick="goToFirstPage()"><img src="img/right_db_arrow.png"
+                                alt="#"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer_box">
             <ul class="footer_menu">
@@ -157,7 +167,7 @@
         </div>
     </footer>
 
-    <!-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             var statusSelect = document.querySelector(".product-status");
 
@@ -245,7 +255,7 @@
             document.getElementById('currentPage').textContent = currentPage;
             // 페이지 이동에 따른 추가 로직을 여기에 추가할 수 있습니다 (예: 서버로 요청 보내기).
         }
-    </script> -->
+    </script>
 </body>
 
 </html>

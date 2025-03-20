@@ -1,6 +1,6 @@
 .write {
     border: none;
-    position: fixed; /* 페이지 내에서 고정 위치 */
+    /* position: fixed; 페이지 내에서 고정 위치 */
     bottom: 35%; /* 페이지 아래에서 20px 만큼 떨어지게 */
     right: 15%;
     padding: 10px 25px;
@@ -14,7 +14,10 @@
     font-size: 20px;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
+
+.writeic{float: right; width: 140px;}
 
 .writeic a img {
     width: 30px; /* 이미지 크기 */
